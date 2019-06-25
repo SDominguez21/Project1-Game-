@@ -5,16 +5,15 @@ $(document).ready(function() {
   //     document.body.innerHTML = "*"
   //   }
   // });
-  
+
   // var audio = $("audio")[0];
-  //     audio.play(); 
+  //     audio.play();
 
   $(function() {
     $(".draggable").draggable();
     $(".droppable").droppable({
       function(event, ui) {
-        $(this)
-          .addClass("ui-state-highlight") 
+        $(this).addClass("ui-state-highlight");
       }
     });
   });
@@ -24,9 +23,7 @@ $(document).ready(function() {
   //   alert( 'The icon "' + draggable.attr('id') + '" was dropped onto me!' );
   // }
 
-$(function dropEvent() {
-  $(".d")
-});
-
-
+  $(function dropEvent() {
+    $(".d");
+  });
 }); //end
