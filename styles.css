@@ -1,72 +1,76 @@
+/* HEAD */
 html {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-body {
-  margin: 0 0 0 0;
-  width: 100%;
-  height: 100%;
-}
-
-.castle-block {
-  content: url("./images/cup.jpg")
-}
-
-.castle {
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  background: pink;
-  content: url();
-}
-
-/* .draggable {
-  width: 100px;
-  height: 100px;
-  padding: 0.5em;
-  float: left;
-  margin: 10px 10px 10px 0;
-}
-.droppable {
-  width: 150px;
-  height: 150px;
-  padding: 0.5em;
-  float: left;
-  margin: 10px;
-} */
-
-.treasure-chest {
-  content: url(./images/treasure.jpg);
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  margin-left: 561px;
   background: lightblue;
 }
 
+body {
+  position: absolute;
+  /* margin: 0 auto; */
+  width: 1068px;
+  height: 799px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
 
+section {
+  width: 50%;
+  height: 50%;
+}
+
+/* START SCREEN  */
+/* #startScreen-parent {
+  width: 100%;
+  height: 100%;
+} */
+
+/* #startScreen {
+  width: ;
+  height: 1000px;
+} */
+
+/* CASTLE */
+.castle-block {
+  width: 50px;
+  height: 50px;
+}
+
+.castle-block img {
+  width: 100%;
+}
+
+.castle {
+  position: absolute;
+  /* background-image: url("./images/castle.jpg"); */
+}
+
+/* TREASURE CHEST */
+.treasure-chest {
+  left: 50%;
+  position: absolute;
+  /* background-image: url("./images/treasure.jpg"); */
+}
+
+/* WOODS */
 .woods {
-  margin-top: 352px;
-  width: 50%;
-  height: 50%;
+  top: 50%;
   position: absolute;
-  background: lightyellow;
-  content: url(./images/trees.jpg);
+  /* background-image: url("./images/trees.jpg"); */
 }
 
+/* WELL */
 .well {
-  width: 50%;
-  height: 50%;
+  top: 50%;
+  left: 50%;
   position: absolute;
-  margin-top: 352px;
-  margin-left: 561px;
-  background: green;
-  content: url();
+  /* background-image: url("./images/well.jpg"); */
 }
 
-.border {
-  background: blue;
-  content: url();
+.coverimages {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
