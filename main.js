@@ -5,17 +5,28 @@ $(document).ready(function() {
   //     document.body.innerHTML = "*"
   //   }
   // });
+  
+  // var audio = $("audio")[0];
+  //     audio.play(); 
 
   $(function() {
     $(".draggable").draggable();
     $(".droppable").droppable({
-      drop: function(event, ui) {
+      function(event, ui) {
         $(this)
           .addClass("ui-state-highlight") 
-          // .find("") //p
-          // .html("Dropped!");
       }
     });
   });
+
+  // function handleDropEvent( event, ui ) {
+  //   var draggable = ui.draggable;
+  //   alert( 'The icon "' + draggable.attr('id') + '" was dropped onto me!' );
+  // }
+
+$(function dropEvent() {
+  $(".d")
+});
+
 
 }); //end
