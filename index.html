@@ -14,106 +14,114 @@
   <body>
     <!-- START SCREEN  -->
     <!-- <div id="startScreen-parent">
-      <img
-        id="startScreen"
-        src="./images/title_page.jpg"
-        onclick="startgame();"
-      />
-    </div> -->
+      <input id="start-page-img" type="img"> -->
+    <!-- id="startScreen"
+      src="./images/title_page.jpg"
+      onclick="startgame();"
+      /> -->
+    <!-- </div> -->
 
     <!-- CASTLE  -->
-    <section class="castle">
-      <img src="./images/castle.jpg" class="coverimages" alt="" />
-      <div class="castle-block draggable">
-        <img src="./PNG/coin.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/coin.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/cup.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/cup.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/wand.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/wand.png" alt="" />
-      </div>
-    </section>
+    <div>
+      <section class="castle">
+        <img
+          src="./images/castle_color.jpg"
+          class="coverimages droppable "
+          alt=""
+        />
+        <!-- icons -->
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/coin.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/coin.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/cup.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/cup.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/wand.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/wand.png" alt="" />
+        </div>
+      </section>
 
-    <!-- TREASURE CHEST  -->
+      <!-- WELL -->
+      <section class="well">
+        <img src="./images/well.jpg" class="coverimages droppable" alt="" />
+        <!-- icons -->
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/coin.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/coin.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/sword.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/sword.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/wand.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/wand.png" alt="" />
+        </div>
+      </section>
 
-    <section class="treasure-chest">
-      <img src="./images/treasure.jpg" class="coverimages" alt="" />
-      <div class="castle-block draggable">
-        <img src="./PNG/coin.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/coin.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/cup.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/cup.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/wand.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/wand.png" alt="" />
-      </div>
-    </section>
+      <!-- WOOD -->
+      <section class="woods">
+        <img src="./images/trees.jpg" class="coverimages droppable" alt="" />
+        <!-- icon -->
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/sword.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/sword.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/cup.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/cup.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/coin.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/coin.png" alt="" />
+        </div>
+      </section>
 
-    <!-- WOOD -->
-    <section class="woods">
-      <img src="./images/trees.jpg" class="coverimages" alt="" />
-      <div class="castle-block draggable">
-        <img src="./PNG/sword.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/sword.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/cup.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/cup.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/wand.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/wand.png" alt="" />
-      </div>
-    </section>
-
-    <!-- WELL -->
-    <section class="well">
-      <img src="./images/well.jpg" class="coverimages" alt="" />
-      <div class="castle-block draggable">
-        <img src="./PNG/coin.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/coin.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/cup.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/cup.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/wand.png" alt="" />
-      </div>
-      <div class="castle-block draggable">
-        <img src="./PNG/wand.png" alt="" />
-      </div>
-    </section>
-
+      <!-- TREASURE CHEST  -->
+      <section class="treasure-chest">
+        <img src="./images/treasure.jpg" class="coverimages droppable" alt="" />
+        <!-- icon -->
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/sword.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/sword.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/cup.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/cup.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/wand.png" alt="" />
+        </div>
+        <div class="icon-block draggable">
+          <img class="z-index" src="./PNG/wand.png" alt="" />
+        </div>
+      </section>
+    </div>
     <!-- BORDER -->
     <!-- <section class="border">
     </section> -->
