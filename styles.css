@@ -45,6 +45,7 @@ section {
 
 .icon-block {
   height: 41px;
+  width: 50px;
 }
 
 /* .droppable img {
@@ -60,12 +61,11 @@ section {
   border-width: 3px;
 }
 .floating-castle {
-  height: 268px;
+  height: 235px;
   width: 178px;
   position: absolute;
-  z-index: 30;
-  /* might need to make "top" and "right" instead of margin */
-  margin: 0px 0px 0 173px;
+  left: 175px;
+  /* z-index: 1; //without z-index the targets are behind image  */
 }
 .sword img {
   height: 100px;
@@ -85,10 +85,11 @@ section {
 }
 /* position */
 .treasure-target {
-  height: 339px;
-  width: 414px;
+  height: 148px;
+  width: 123px;
+  right: 43px;
+  top: 155px;
   position: absolute;
-  z-index: 30;
 }
 .coin img {
   height: 64px;
@@ -130,11 +131,11 @@ section {
 }
 /* well target */
 .well-target {
-  height: 279px;
-  width: 134px;
+  height: 192px;
+  width: 114px;
   position: absolute;
-  /* z-index: 30; */
-  right: 176px;
+  top: 88px;
+  left: 151px;
 }
 .cup img {
   height: 100px;
