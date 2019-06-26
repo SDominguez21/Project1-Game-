@@ -13,11 +13,6 @@ html {
   justify-content: space-between;
 }
 
-/* #rules img {
-  display: flex;
-  height: 100px;
-} */
-
 body {
   margin: 0;
   width: 1020;
@@ -48,51 +43,15 @@ section {
   height: 50%;
 }
 
-/* .draggable img {
-
+.icon-block {
+  height: 41px;
 }
 
-.ui-state-highlight {
- background-color: white;
-  display: inline-block;
-  
-  img:hover {
-    opacity: .5;
+/* .droppable img {
+  display: flex;
 } */
 
-.z-index {
-  z-index: 40;
-  position: absolute;
-}
-
-.icon-block {
-  width: 50px;
-  height: 50px;
-}
-
-.icon-block img {
-  width: 100%;
-}
-
-ul {
-  margin: 0;
-}
-
-ul .li {
-  margin: 0;
-}
-
 /* CASTLEt*/
-
-/* castle target */
-.floating-castle {
-  height: 268px;
-  width: 178px;
-  position: absolute;
-  z-index: 30;
-  margin: 0px 0px 0 173px;
-}
-
 /* castle background */
 .castle {
   position: absolute;
@@ -100,26 +59,22 @@ ul .li {
   border-color: black;
   border-width: 3px;
 }
+.floating-castle {
+  height: 268px;
+  width: 178px;
+  position: absolute;
+  z-index: 30;
+  /* might need to make "top" and "right" instead of margin */
+  margin: 0px 0px 0 173px;
+}
+.sword img {
+  height: 100px;
+  z-index: 30;
+  position: absolute;
+}
 
 /* TREASURE CHEST */
-.well {
-  left: 50%;
-  position: absolute;
-  border-style: solid;
-  border-color: black;
-  border-width: 3px;
-}
-
-/* WOODS */
-.woods {
-  top: 50%;
-  position: absolute;
-  border-style: solid;
-  border-color: black;
-  border-width: 3px;
-}
-
-/* WELL */
+/* treasure chest background */
 .treasure-chest {
   top: 50%;
   left: 50%;
@@ -128,7 +83,67 @@ ul .li {
   border-color: black;
   border-width: 3px;
 }
+/* position */
+.treasure-target {
+  height: 339px;
+  width: 414px;
+  position: absolute;
+  z-index: 30;
+}
+.coin img {
+  height: 64px;
+  width: 65px;
+  z-index: 30;
+  position: absolute;
+}
 
+/* WOODS */
+/* woods background */
+.woods {
+  top: 50%;
+  position: absolute;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
+/* position */
+.woods-target {
+  height: 279px;
+  width: 134px;
+  position: absolute;
+  right: 176px;
+}
+.wand img {
+  height: 100px;
+  z-index: 30;
+  position: absolute;
+}
+
+/* WELL */
+/* well background */
+.well {
+  left: 50%;
+  position: absolute;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
+/* well target */
+.well-target {
+  height: 279px;
+  width: 134px;
+  position: absolute;
+  /* z-index: 30; */
+  right: 176px;
+}
+.cup img {
+  height: 100px;
+  width: 84px;
+  z-index: 30;
+  position: absolute;
+}
+
+/* BACKGROUND IMAGE */
 .coverimages {
   position: absolute;
   width: 100%;

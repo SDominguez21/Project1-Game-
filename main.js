@@ -1,54 +1,67 @@
 $(document).ready(function() {
   console.log("cool");
-  // // TITLE PAGE
-  // window.addEventListener("keyup", ev => {
-  //   if (ev.keyCode === 38) {
-  //     document.body.innerHTML = "*"
-  //   }
-  // });
   let score = 0;
-  let audio = $("audio")[0];
-  audio.play();
+
+  // drop and drag function with targets and what they accept
 
   $(function() {
     $(".draggable").draggable();
     $(".floating-castle").droppable({
       drop: function(event, ui) {
-        console.log(ui.draggable.hasClass("sword"));
         if (ui.draggable.hasClass("sword")) {
+          console.log(ui.draggable.hasClass("sword"));
           alert("Yes, sword!");
           score += 1;
           console.log(score);
+          alert("score:" + score);
         }
-        // if (ui.draggable.hasClass("")) {
       }
     });
 
-    // $(".well-target").droppable({
-    //   drop: function(event, ui) {
-    //     console.log(ui.draggable.hasClass("well"));
-    //     if (ui.draggable.hasClass("well")) {
-    //       alert("Yes, sword!");
-    //       score += 1;
-    //       console.log(score);
-    //     }
-    //     // if (ui.draggable.hasClass("")) {
+    $(".well-target").droppable({
+      drop: function(event, ui) {
+        console.log(ui.draggable.hasClass("cup"));
+        if (ui.draggable.hasClass("cup")) {
+          alert("A cup!");
+          score += 1;
+          console.log(score);
+          alert("score:" + score);
+        } else {
+          alert("wrong!");
+        }
+      }
+    });
 
-    //   }
-    // });
+    $(".treasure-target").droppable({
+      drop: function(event, ui) {
+        console.log(ui.draggable.hasClass("coin"));
+        if (ui.draggable.hasClass("coin")) {
+          alert("hurray, a coin!");
+          score += 1;
+          console.log(score);
+          alert("score:" + score);
+        }
+      }
+    });
+
+    $(".woods-target").droppable({
+      drop: function(event, ui) {
+        console.log(ui.draggable.hasClass("wand"));
+        if (ui.draggable.hasClass("wand")) {
+          alert("clubbin!");
+          score += 1;
+          console.log(score);
+          alert("score:" + score);
+        }
+      }
+    });
   });
 
   function handleDropEvent(event, ui) {
     console.log("papooga");
     var draggable = ui.draggable;
     alert('The icon "' + draggable.attr("id") + '" was dropped onto me!');
-
-    // if(draggable is )
   }
-
-  // $(function dropEvent() {
-  //   $(".d");
-  // });
 }); //end
 
 // handleDropEvent();
