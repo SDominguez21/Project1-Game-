@@ -10,10 +10,10 @@ $(document).ready(function() {
       drop: function(event, ui) {
         if (ui.draggable.hasClass("sword")) {
           console.log(ui.draggable.hasClass("sword"));
-          alert("Yes, sword!");
+          // alert("Yes, sword!");
           $("span#counter").html((score += 1));
           console.log(score);
-          alert("score:" + score);
+          // alert("score:" + score);
           $(ui.draggable).hide();
         } else {
           alert("wrong!");
@@ -25,10 +25,10 @@ $(document).ready(function() {
       drop: function(event, ui) {
         console.log(ui.draggable.hasClass("cup"));
         if (ui.draggable.hasClass("cup")) {
-          alert("A cup!");
+          // alert("A cup!");
           $("span#counter").html((score += 1));
           console.log(score);
-          alert("score:" + score);
+          // alert("score:" + score);
           $(ui.draggable).hide();
         } else {
           alert("wrong!");
@@ -40,10 +40,10 @@ $(document).ready(function() {
       drop: function(event, ui) {
         console.log(ui.draggable.hasClass("coin"));
         if (ui.draggable.hasClass("coin")) {
-          alert("hurray, a coin!");
+          // alert("hurray, a coin!");
           $("span#counter").html((score += 1));
           console.log(score);
-          alert("score:" + score);
+          // alert("score:" + score);
           $(ui.draggable).hide();
         } else {
           alert("wrong!");
@@ -55,10 +55,10 @@ $(document).ready(function() {
       drop: function(event, ui) {
         console.log(ui.draggable.hasClass("wand"));
         if (ui.draggable.hasClass("wand")) {
-          alert("clubbin!");
+          // alert("clubbin!");
           $("span#counter").html((score += 1));
           console.log(score);
-          alert("score:" + score);
+          // alert("score:" + score);
           $(ui.draggable).hide();
         } else {
           alert("wrong!");
