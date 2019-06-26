@@ -6,11 +6,38 @@ html {
   /* background: lightblue; */
 }
 
+#flex-area {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #rules img {
+  display: flex;
+  height: 100px;
+} */
+
 body {
+  margin: 0;
+  width: 1020;
+  height: 900;
+  display: flex;
+}
+
+#fool img {
+  display: flex;
+  justify-content: space-between;
+  height: 750px;
+  margin-top: 30px;
+}
+
+#playing-area {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
-  margin: 0 auto;
-  width: 1019px;
-  height: 746px;
+  width: 827px;
+  height: 680px;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -59,11 +86,11 @@ ul .li {
 
 /* castle target */
 .floating-castle {
-  height: 313px;
-  width: 228px;
+  height: 268px;
+  width: 178px;
   position: absolute;
   z-index: 30;
-  margin: -7px 0 0 225px;
+  margin: 0px 0px 0 173px;
 }
 
 /* castle background */
