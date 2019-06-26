@@ -14,6 +14,8 @@ $(document).ready(function() {
           score += 1;
           console.log(score);
           alert("score:" + score);
+        } else {
+          alert("wrong!");
         }
       }
     });
@@ -40,6 +42,8 @@ $(document).ready(function() {
           score += 1;
           console.log(score);
           alert("score:" + score);
+        } else {
+          alert("wrong!");
         }
       }
     });
@@ -52,6 +56,8 @@ $(document).ready(function() {
           score += 1;
           console.log(score);
           alert("score:" + score);
+        } else {
+          alert("wrong!");
         }
       }
     });
