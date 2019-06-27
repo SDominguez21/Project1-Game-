@@ -41,18 +41,31 @@ body {
   position: absolute;
   top: 25%;
   left: 10%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5rem;
 }
 
 #speech-bubble span {
-  top: 9%;
-  left: 24%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 3.5rem;
+  top: 35%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 71px;
   position: absolute;
 }
 
 #speech-bubble img {
   width: 100%;
+}
+
+.gameover {
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.youwin {
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* SCORE BAR*/

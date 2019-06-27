@@ -2,8 +2,34 @@ $(document).ready(function() {
   console.log("cool");
   let score = 0;
   let pointpic = "";
-  // let timer = 0;
+  let timer = 40;
 
+  $(".draggable").hide();
+
+  // START BUTTON
+  $("#start-btn").click(function() {
+    // alert("yay!");
+    $("#start-btn").hide();
+    $(".draggable").show();
+    // TIMER
+    timer--;
+    $("#speech-bubble span").html(":" + timer);
+    var interval = setInterval(function() {
+      timer--;
+      $("#speech-bubble span").html(":" + timer);
+      if (timer == 0) {
+        $(".draggable").draggable("destroy");
+        clearInterval(interval);
+        $("#speech-bubble span").html("GAME <br> OVER");
+        $("#speech-bubble span").addClass("gameover");
+      } 
+      if(score == 24) {
+        $("#speech-bubble span").html("YOU <br> WIN!");
+        $("#speech-bubble span").addClass("youwin");
+        clearInterval(interval);
+      }
+    }, 1000);
+  });
 
   $(function() {
     $(".draggable").draggable();
