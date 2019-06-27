@@ -1,8 +1,9 @@
 $(document).ready(function() {
   console.log("cool");
   let score = 0;
+  let pointpic = "";
+  // let timer = 0;
 
-  // drop and drag function with targets and what they accept
 
   $(function() {
     $(".draggable").draggable();
@@ -15,8 +16,10 @@ $(document).ready(function() {
           console.log(score);
           // alert("score:" + score);
           $(ui.draggable).hide();
+          pointpic += '<img src="./PNG/sword.png" class="pointpics"/>';
+          $("#scorepics").html(pointpic);
         } else {
-          alert("wrong!");
+          // alert("wrong!");
         }
       }
     });
@@ -30,8 +33,10 @@ $(document).ready(function() {
           console.log(score);
           // alert("score:" + score);
           $(ui.draggable).hide();
+          pointpic += '<img src="./PNG/cup.png" class="pointpics"/>';
+          $("#scorepics").html(pointpic);
         } else {
-          alert("wrong!");
+          // alert("wrong!");
         }
       }
     });
@@ -45,8 +50,10 @@ $(document).ready(function() {
           console.log(score);
           // alert("score:" + score);
           $(ui.draggable).hide();
+          pointpic += '<img src="./PNG/coin.png" class="pointpics"/>';
+          $("#scorepics").html(pointpic);
         } else {
-          alert("wrong!");
+          // alert("wrong!");
         }
       }
     });
@@ -60,8 +67,10 @@ $(document).ready(function() {
           console.log(score);
           // alert("score:" + score);
           $(ui.draggable).hide();
+          pointpic += '<img src="./PNG/wand.png" class="pointpics"/>';
+          $("#scorepics").html(pointpic);
         } else {
-          alert("wrong!");
+          // alert("wrong!");
         }
       }
     });

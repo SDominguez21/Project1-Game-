@@ -12,18 +12,27 @@
   </head>
 
   <body>
+    <div id="speech-bubble">
+      <span>:30</span>
+      <img src="./PNG/cartoonspeech_bubble.png" alt="speech bubble" />
+    </div>
     <!-- TITLE and img with rules-->
     <div id="flex-area">
       <div id="fool"><img src="./images/title_logo.jpg" alt="" /></div>
 
       <!-- SCORE -->
-      <div id="score">
-        <h3>SCORE:<br /></h3>
-        <h1><span id="counter">0</span></h1>
+      <div id="score-container">
+        <div id="score">
+          <h3>SCORE:<br /></h3>
+          <h1><span id="counter">0</span></h1>
+        </div>
+        <div id="scorepics"></div>
       </div>
 
       <!-- whole playing area div -->
       <div id="playing-area">
+        <!-- button -->
+        <button id="start-btn">Start</button>
         <!-- CASTLE  -->
         <section class="castle">
           <!-- castle target -->
