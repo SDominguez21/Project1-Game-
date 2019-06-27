@@ -3,6 +3,11 @@ $(document).ready(function() {
   let score = 0;
   let pointpic = "";
   let timer = 40;
+  let coindrop = new Audio("./audio/coin.mp3");
+  let branchsnap = new Audio("./audio/branch.mp3");
+  let swordswoosh = new Audio("./audio/sword.mp3");
+  let waterdrop = new Audio("./audio/water.mp3");
+  let moonlightsonata = new Audio("./audio/beethoven.mp3");
 
   $(".draggable").hide();
 
@@ -11,7 +16,7 @@ $(document).ready(function() {
     // alert("yay!");
     $("#start-btn").hide();
     $(".draggable").show();
-    // TIMER
+    moonlightsonata.play();
     timer--;
     $("#speech-bubble span").html(":" + timer);
     var interval = setInterval(function() {
@@ -22,8 +27,8 @@ $(document).ready(function() {
         clearInterval(interval);
         $("#speech-bubble span").html("GAME <br> OVER");
         $("#speech-bubble span").addClass("gameover");
-      } 
-      if(score == 24) {
+      }
+      if (score == 24) {
         $("#speech-bubble span").html("YOU <br> WIN!");
         $("#speech-bubble span").addClass("youwin");
         clearInterval(interval);
@@ -36,6 +41,8 @@ $(document).ready(function() {
     $(".floating-castle").droppable({
       drop: function(event, ui) {
         if (ui.draggable.hasClass("sword")) {
+          swordswoosh.currentTime = 0;
+          swordswoosh.play();
           console.log(ui.draggable.hasClass("sword"));
           // alert("Yes, sword!");
           $("span#counter").html((score += 1));
@@ -53,6 +60,8 @@ $(document).ready(function() {
     $(".well-target").droppable({
       drop: function(event, ui) {
         console.log(ui.draggable.hasClass("cup"));
+        waterdrop.currentTime = 0;
+        waterdrop.play();
         if (ui.draggable.hasClass("cup")) {
           // alert("A cup!");
           $("span#counter").html((score += 1));
@@ -71,6 +80,8 @@ $(document).ready(function() {
       drop: function(event, ui) {
         console.log(ui.draggable.hasClass("coin"));
         if (ui.draggable.hasClass("coin")) {
+          coindrop.currentTime = 0;
+          coindrop.play();
           // alert("hurray, a coin!");
           $("span#counter").html((score += 1));
           console.log(score);
@@ -88,6 +99,8 @@ $(document).ready(function() {
       drop: function(event, ui) {
         console.log(ui.draggable.hasClass("wand"));
         if (ui.draggable.hasClass("wand")) {
+          branchsnap.currentTime = 0;
+          branchsnap.play();
           // alert("clubbin!");
           $("span#counter").html((score += 1));
           console.log(score);
