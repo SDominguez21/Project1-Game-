@@ -139,10 +139,6 @@ section {
   width: 50px;
 }
 
-/* .droppable img {
-  display: flex;
-} */
-
 /* CASTLEt*/
 /* castle background */
 .castle {
@@ -152,12 +148,25 @@ section {
   border-width: 3px;
 }
 .floating-castle {
-  height: 235px;
-  width: 178px;
+  height: 265px;
+  width: 179px;
+  top: 0.2%;
   position: absolute;
-  left: 175px;
-  /* z-index: 1; //without z-index the targets are behind image  */
+  left: 173px;
+  z-index: 1;
 }
+
+.highlight {
+  filter: drop-shadow(-1px 1px 1px yellow) drop-shadow(1px -1px 1px yellow)
+    drop-shadow(1px 1px 1px yellow) drop-shadow(-1px -1px 1px yellow);
+  /* opacity: 0.5; */
+}
+
+.floating-castle:hover {
+  transition: transform 0.1s linear;
+  transform: scale(1.05);
+}
+
 .sword img {
   height: 100px;
   z-index: 30;
@@ -176,12 +185,19 @@ section {
 }
 /* position */
 .treasure-target {
-  height: 148px;
-  width: 123px;
-  right: 43px;
-  top: 155px;
+  height: 171px;
+  width: 183px;
+  right: 8px;
+  top: 143px;
   position: absolute;
+  z-index: 1;
 }
+
+.treasure-target:hover {
+  transition: transform 0.1s linear;
+  transform: scale(1.05);
+}
+
 .coin img {
   height: 64px;
   width: 65px;
@@ -200,11 +216,19 @@ section {
 }
 /* position */
 .woods-target {
-  height: 279px;
+  height: 271px;
   width: 134px;
   position: absolute;
-  right: 176px;
+  top: 7px;
+  left: 108px;
+  z-index: 1;
 }
+
+.woods-target:hover {
+  transition: transform 0.1s linear;
+  transform: scale(1.05);
+}
+
 .wand img {
   height: 100px;
   z-index: 30;
@@ -222,12 +246,19 @@ section {
 }
 /* well target */
 .well-target {
-  height: 192px;
-  width: 114px;
+  height: 227px;
+  width: 137px;
   position: absolute;
-  top: 88px;
-  left: 151px;
+  top: 60px;
+  left: 135px;
+  z-index: 1;
 }
+
+.well-target:hover {
+  transition: transform 0.1s linear;
+  transform: scale(1.05);
+}
+
 .cup img {
   height: 100px;
   width: 84px;

@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.log("cool");
   let score = 0;
   let pointpic = "";
-  let timer = 40;
+  let timer = 41;
   let coindrop = new Audio("./audio/coin.mp3");
   let branchsnap = new Audio("./audio/branch.mp3");
   let swordswoosh = new Audio("./audio/sword.mp3");
@@ -10,19 +10,21 @@ $(document).ready(function() {
   let moonlightsonata = new Audio("./audio/beethoven.mp3");
 
   $(".draggable").hide();
+  $("#speech-bubble").hide();
 
   // START BUTTON
   $("#start-btn").click(function() {
     // alert("yay!");
     $("#start-btn").hide();
     $(".draggable").show();
+    $("#speech-bubble").show();
     moonlightsonata.play();
     timer--;
     $("#speech-bubble span").html(":" + timer);
     var interval = setInterval(function() {
       timer--;
       $("#speech-bubble span").html(":" + timer);
-      if (timer == 0) {
+      if (timer == -1) {
         $(".draggable").draggable("destroy");
         clearInterval(interval);
         $("#speech-bubble span").html("GAME <br> OVER");
@@ -39,6 +41,7 @@ $(document).ready(function() {
   $(function() {
     $(".draggable").draggable();
     $(".floating-castle").droppable({
+      hoverClass: "highlight",
       drop: function(event, ui) {
         if (ui.draggable.hasClass("sword")) {
           swordswoosh.currentTime = 0;
@@ -58,6 +61,7 @@ $(document).ready(function() {
     });
 
     $(".well-target").droppable({
+      hoverClass: "highlight",
       drop: function(event, ui) {
         console.log(ui.draggable.hasClass("cup"));
         waterdrop.currentTime = 0;
@@ -77,6 +81,7 @@ $(document).ready(function() {
     });
 
     $(".treasure-target").droppable({
+      hoverClass: "highlight",
       drop: function(event, ui) {
         console.log(ui.draggable.hasClass("coin"));
         if (ui.draggable.hasClass("coin")) {
@@ -96,6 +101,7 @@ $(document).ready(function() {
     });
 
     $(".woods-target").droppable({
+      hoverClass: "highlight",
       drop: function(event, ui) {
         console.log(ui.draggable.hasClass("wand"));
         if (ui.draggable.hasClass("wand")) {
@@ -117,7 +123,7 @@ $(document).ready(function() {
 });
 
 function handleDropEvent(event, ui) {
-  console.log("papooga");
+  // console.log("hi!");
   var draggable = ui.draggable;
   alert('The icon "' + draggable.attr("id") + '" was dropped onto me!');
 }
