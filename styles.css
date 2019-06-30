@@ -157,8 +157,8 @@ section {
 }
 
 .highlight {
-  filter: drop-shadow(-1px 1px 1px yellow) drop-shadow(1px -1px 1px yellow)
-    drop-shadow(1px 1px 1px yellow) drop-shadow(-1px -1px 1px yellow);
+  filter: drop-shadow(1px 1px 1px yellow) drop-shadow(1px 1px 1px yellow)
+    drop-shadow(1px 1px 1px yellow) drop-shadow(1px 1px 1px yellow);
   /* opacity: 0.5; */
 }
 
