@@ -40,6 +40,7 @@ $(document).ready(function() {
 
   $(function() {
     $(".draggable").draggable();
+
     $(".floating-castle").droppable({
       hoverClass: "highlight",
       drop: function(event, ui) {
@@ -63,10 +64,10 @@ $(document).ready(function() {
     $(".well-target").droppable({
       hoverClass: "highlight",
       drop: function(event, ui) {
-        console.log(ui.draggable.hasClass("cup"));
-        waterdrop.currentTime = 0;
-        waterdrop.play();
         if (ui.draggable.hasClass("cup")) {
+          waterdrop.currentTime = 0;
+          waterdrop.play();
+          console.log(ui.draggable.hasClass("cup"));
           // alert("A cup!");
           $("span#counter").html((score += 1));
           console.log(score);
