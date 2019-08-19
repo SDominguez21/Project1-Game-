@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  console.log("cool");
+  // console.log("cool");
   let score = 0;
   let pointpic = "";
   let timer = 41;
