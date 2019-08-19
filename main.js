@@ -47,7 +47,7 @@ $(document).ready(function() {
         if (ui.draggable.hasClass("sword")) {
           swordswoosh.currentTime = 0;
           swordswoosh.play();
-          console.log(ui.draggable.hasClass("sword"));
+          // console.log(ui.draggable.hasClass("sword"));
           // alert("Yes, sword!");
           $("span#counter").html((score += 1));
           console.log(score);
