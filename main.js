@@ -50,7 +50,7 @@ $(document).ready(function() {
           // console.log(ui.draggable.hasClass("sword"));
           // alert("Yes, sword!");
           $("span#counter").html((score += 1));
-          console.log(score);
+          // console.log(score);
           // alert("score:" + score);
           $(ui.draggable).hide();
           pointpic += '<img src="./PNG/sword.png" class="pointpics"/>';
