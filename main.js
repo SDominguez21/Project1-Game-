@@ -67,7 +67,7 @@ $(document).ready(function() {
         if (ui.draggable.hasClass("cup")) {
           waterdrop.currentTime = 0;
           waterdrop.play();
-          console.log(ui.draggable.hasClass("cup"));
+          // console.log(ui.draggable.hasClass("cup"));
           // alert("A cup!");
           $("span#counter").html((score += 1));
           console.log(score);
