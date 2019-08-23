@@ -84,7 +84,7 @@ $(document).ready(function() {
     $(".treasure-target").droppable({
       hoverClass: "highlight",
       drop: function(event, ui) {
-        console.log(ui.draggable.hasClass("coin"));
+        // console.log(ui.draggable.hasClass("coin"));
         if (ui.draggable.hasClass("coin")) {
           coindrop.currentTime = 0;
           coindrop.play();
