@@ -104,7 +104,7 @@ $(document).ready(function() {
     $(".woods-target").droppable({
       hoverClass: "highlight",
       drop: function(event, ui) {
-        console.log(ui.draggable.hasClass("wand"));
+        // console.log(ui.draggable.hasClass("wand"));
         if (ui.draggable.hasClass("wand")) {
           branchsnap.currentTime = 0;
           branchsnap.play();
