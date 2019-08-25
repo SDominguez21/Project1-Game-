@@ -110,7 +110,7 @@ $(document).ready(function() {
           branchsnap.play();
           // alert("clubbin!");
           $("span#counter").html((score += 1));
-          console.log(score);
+          // console.log(score);
           // alert("score:" + score);
           $(ui.draggable).hide();
           pointpic += '<img src="./PNG/wand.png" class="pointpics"/>';
