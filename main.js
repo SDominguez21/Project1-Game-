@@ -126,5 +126,5 @@ $(document).ready(function() {
 function handleDropEvent(event, ui) {
   // console.log("hi!");
   var draggable = ui.draggable;
-  alert('The icon "' + draggable.attr("id") + '" was dropped onto me!');
+  // alert('The icon "' + draggable.attr("id") + '" was dropped onto me!');
 }
